@@ -1,0 +1,80 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_45\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;C:\Users\dwlim\Desktop\GitHub\GridWorld\gridworld.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab
+-d
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java...
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:162: error: illegal start of expression
+    }
+    ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:172: error: illegal start of expression
+    public Actor getActor(int row, int col)
+    ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:172: error: ';' expected
+    public Actor getActor(int row, int col)
+                ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:172: error: variable declaration not allowed here
+    public Actor getActor(int row, int col)
+           ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:172: error: '.class' expected
+    public Actor getActor(int row, int col)
+                              ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:172: error: ';' expected
+    public Actor getActor(int row, int col)
+                                 ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:172: error: ';' expected
+    public Actor getActor(int row, int col)
+                                          ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:184: error: illegal start of expression
+    public int getNumRows()
+    ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:184: error: ';' expected
+    public int getNumRows()
+                         ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:194: error: illegal start of expression
+    public int getNumCols()
+    ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:194: error: ';' expected
+    public int getNumCols()
+                         ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:204: error: illegal start of expression
+    public static void main(String[] args)
+    ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:204: error: illegal start of expression
+    public static void main(String[] args)
+           ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:204: error: ';' expected
+    public static void main(String[] args)
+                 ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:204: error: '.class' expected
+    public static void main(String[] args)
+                                     ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:204: error: ';' expected
+    public static void main(String[] args)
+                                         ^
+C:\Users\dwlim\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:209: error: reached end of file while parsing
+}
+ ^
+17 errors

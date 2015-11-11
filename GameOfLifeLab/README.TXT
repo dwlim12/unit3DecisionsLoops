@@ -31,6 +31,13 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal
 	each generation is a pure function of the preceding one). The rules
 	continue to be applied repeatedly to create further generations.
 
+Additional Requirements
+
+* A 10x10 grid that doesn't wrap around
+* Live cells will be in green while dead cells are red
+* I will attempt to make a set, oscillating pattern rather than a random pattern that is somewhat unpredictable
+* It will run for a long time unless the user prompts for it to exit with one second between each generation
+
 
 Nonfunctional Requirements:
 
@@ -48,7 +55,7 @@ Artifacts to Produce:
 	your requirements document before you start the design document or test
 	plan. You may change the requirements document throughout development.
 * Design Document: You must do some design activity before starting
-	implementation. This may consist of a flow cart, pseudocode, or other
+	implementation. This may consist of a flow chart, pseudocode, or other
 	design artifact. I must review your design document before you start
 	implementing code. You may change your design document throughout
 	development.
