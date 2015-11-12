@@ -164,8 +164,28 @@ public class GameOfLife
         {
             ArrayList<Actor> neighbors = grid.getNeighbors(location);
             int num_neighbors = neighbors.size();
-            if (num_neighbors < 2)
+            if (num_neighbors < 2 || num_neighbors > 3)
             {
+                grid.remove(location);
+            }
+        }
+        
+        for (int i = 0;i <= 9;i++)
+        {
+            for (int j = 0;j <= 9;j++)
+            {
+                Location location = new Location(i,j);
+                if (grid.get(location) == null)
+                {
+                    ArrayList<Actor> neighbors = grid.getNeighbors(location);
+                    int num_neighbors = neighbors.size();
+                    if (num_neighbors == 3)
+                    {
+                        //make an array list of the locations and add rocks after
+                        Rock rock = new Rock();
+                        grid.put(location,rock);
+                    }
+                }
             }
         }
     }
