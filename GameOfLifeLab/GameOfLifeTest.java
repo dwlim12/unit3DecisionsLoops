@@ -118,7 +118,7 @@ public class GameOfLifeTest
          */
         
         GameOfLife game = new GameOfLife();
-        for (int i = 0;i <= 5;i++)
+        for (int i = 1; i <= 3; i++)
         {
             game.createNextGeneration();
         }
