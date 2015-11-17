@@ -22,7 +22,7 @@ public class GameOfLife
     private final int ROWS = 10;
     private final int COLS = 10;
     
-    /**
+   /**
      * Default constructor for objects of class GameOfLife
      * 
      * @post    the game will be initialized and populated with the initial state of cells
@@ -44,7 +44,7 @@ public class GameOfLife
         
     }
     
-    /**
+   /**
      * Creates the actors and inserts them into their initial starting positions in the grid
      *
      * @pre     the grid has been created
@@ -170,10 +170,6 @@ public class GameOfLife
                 {empty.add(loc);}
             }
         }
-<<<<<<< HEAD
-        
-=======
->>>>>>> 55383f84a38c3928f8f658253885c521646ea2cd
         ArrayList<Location> one_neighbors = new ArrayList();
         ArrayList<Location> three_neighbors = new ArrayList();
         ArrayList<Location> four_neighbors = new ArrayList();
@@ -185,7 +181,6 @@ public class GameOfLife
             {one_neighbors.add(location);}
             else if (num_neighbors > 3)
             {four_neighbors.add(location);}
-<<<<<<< HEAD
         }
         
         for (Location location : empty)
@@ -196,8 +191,7 @@ public class GameOfLife
             {three_neighbors.add(location);}
         }
         
-=======
-        }
+        
         for (Location location : empty)
         {
             ArrayList<Actor> neighbors = grid.getNeighbors(location);
@@ -205,22 +199,16 @@ public class GameOfLife
             if (num_neighbors == 3)
             {three_neighbors.add(location);}
         }
->>>>>>> 55383f84a38c3928f8f658253885c521646ea2cd
         for (Location location : one_neighbors)
         {grid.remove(location);}
         for (Location location : four_neighbors)
         {grid.remove(location);}
         for (Location location : three_neighbors)
         {Rock rock = new Rock();
-<<<<<<< HEAD
          grid.put(location,rock);}
    }
-=======
-         grid.put(location, rock);}
-    }
->>>>>>> 55383f84a38c3928f8f658253885c521646ea2cd
     
-    /**
+   /**
      * Returns the actor at the specified row and column. Intended to be used for unit testing.
      *
      * @param   row the row (zero-based index) of the actor to return
@@ -235,7 +223,7 @@ public class GameOfLife
         return actor;
     }
 
-    /**
+   /**
      * Returns the number of rows in the game board
      *
      * @return    the number of rows in the game board
@@ -245,7 +233,7 @@ public class GameOfLife
         return ROWS;
     }
     
-    /**
+   /**
      * Returns the number of columns in the game board
      *
      * @return    the number of columns in the game board
@@ -256,7 +244,7 @@ public class GameOfLife
     }
     
     
-    /**
+   /**
      * Creates an instance of this class. Provides convenient execution.
      *
      */
