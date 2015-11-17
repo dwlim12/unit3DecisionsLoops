@@ -170,6 +170,7 @@ public class GameOfLife
                 {empty.add(loc);}
             }
         }
+        
         ArrayList<Location> one_neighbors = new ArrayList();
         ArrayList<Location> three_neighbors = new ArrayList();
         ArrayList<Location> four_neighbors = new ArrayList();
@@ -191,7 +192,6 @@ public class GameOfLife
             {three_neighbors.add(location);}
         }
         
-        
         for (Location location : empty)
         {
             ArrayList<Actor> neighbors = grid.getNeighbors(location);
@@ -207,7 +207,7 @@ public class GameOfLife
         {Rock rock = new Rock();
          grid.put(location,rock);}
    }
-    
+   
    /**
      * Returns the actor at the specified row and column. Intended to be used for unit testing.
      *
@@ -249,8 +249,15 @@ public class GameOfLife
      *
      */
     public static void main(String[] args)
+            throws InterruptedException
     {
         GameOfLife game = new GameOfLife();
+        int i = 1;
+        while (i == 1)
+        {
+            game.createNextGeneration();
+            Thread.sleep(1000);
+        }
     }
 
 }

@@ -34,8 +34,8 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal
 Additional Requirements
 
 * A 10x10 grid that doesn't wrap around
-* Live cells will be in green while dead cells are red
-* I will attempt to make a set, oscillating pattern rather than a random pattern that is somewhat unpredictable
+* Live cells will be black rocks and dead cells will be empty cells in the grid
+* I will attempt to make a set pattern that loops infinitely over 5 generations of change
 * It will run for a long time unless the user prompts for it to exit with one second between each generation
 
 
