@@ -160,14 +160,42 @@ public class GameOfLife
         
         // insert magic here...
         ArrayList<Location> cells = grid.getOccupiedLocations();
+        ArrayList<Location> empty = new ArrayList();
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                Location loc = new Location(i,j);
+                if (grid.get(loc) == null)
+                {empty.add(loc);}
+            }
+        }
+        ArrayList<Location> one_neighbors = new ArrayList();
+        ArrayList<Location> three_neighbors = new ArrayList();
+        ArrayList<Location> four_neighbors = new ArrayList();
         for (Location location : cells)
         {
             ArrayList<Actor> neighbors = grid.getNeighbors(location);
             int num_neighbors = neighbors.size();
-            if (num_neighbors < 2)
-            {
-            }
+            if (num_neighbors == 1)
+            {one_neighbors.add(location);}
+            else if (num_neighbors > 3)
+            {four_neighbors.add(location);}
         }
+        for (Location location : empty)
+        {
+            ArrayList<Actor> neighbors = grid.getNeighbors(location);
+            int num_neighbors = neighbors.size();
+            if (num_neighbors == 3)
+            {three_neighbors.add(location);}
+        }
+        for (Location location : one_neighbors)
+        {grid.remove(location);}
+        for (Location location : four_neighbors)
+        {grid.remove(location);}
+        for (Location location : three_neighbors)
+        {Rock rock = new Rock();
+         grid.put(location, rock);}
     }
     
     /**

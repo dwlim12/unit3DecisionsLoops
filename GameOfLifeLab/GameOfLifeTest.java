@@ -118,6 +118,8 @@ public class GameOfLifeTest
          */
         
         GameOfLife game = new GameOfLife();
+        for (int i = 1; i <= 5; i++)
+        {game.createNextGeneration();}
         final int ROWS = game.getNumRows();
         final int COLS = game.getNumCols();
         
