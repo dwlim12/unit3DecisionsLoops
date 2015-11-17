@@ -170,7 +170,10 @@ public class GameOfLife
                 {empty.add(loc);}
             }
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> 55383f84a38c3928f8f658253885c521646ea2cd
         ArrayList<Location> one_neighbors = new ArrayList();
         ArrayList<Location> three_neighbors = new ArrayList();
         ArrayList<Location> four_neighbors = new ArrayList();
@@ -182,6 +185,7 @@ public class GameOfLife
             {one_neighbors.add(location);}
             else if (num_neighbors > 3)
             {four_neighbors.add(location);}
+<<<<<<< HEAD
         }
         
         for (Location location : empty)
@@ -192,14 +196,29 @@ public class GameOfLife
             {three_neighbors.add(location);}
         }
         
+=======
+        }
+        for (Location location : empty)
+        {
+            ArrayList<Actor> neighbors = grid.getNeighbors(location);
+            int num_neighbors = neighbors.size();
+            if (num_neighbors == 3)
+            {three_neighbors.add(location);}
+        }
+>>>>>>> 55383f84a38c3928f8f658253885c521646ea2cd
         for (Location location : one_neighbors)
         {grid.remove(location);}
         for (Location location : four_neighbors)
         {grid.remove(location);}
         for (Location location : three_neighbors)
         {Rock rock = new Rock();
+<<<<<<< HEAD
          grid.put(location,rock);}
    }
+=======
+         grid.put(location, rock);}
+    }
+>>>>>>> 55383f84a38c3928f8f658253885c521646ea2cd
     
     /**
      * Returns the actor at the specified row and column. Intended to be used for unit testing.
