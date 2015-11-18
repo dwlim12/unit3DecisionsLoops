@@ -171,9 +171,9 @@ public class GameOfLife
             }
         }
         
-        ArrayList<Location> one_neighbors = new ArrayList();
-        ArrayList<Location> three_neighbors = new ArrayList();
-        ArrayList<Location> four_neighbors = new ArrayList();
+        ArrayList<Location> one_neighbors = new ArrayList<Location>();
+        ArrayList<Location> three_neighbors = new ArrayList<Location>();
+        ArrayList<Location> four_neighbors = new ArrayList<Location>();
         for (Location location : cells)
         {
             ArrayList<Actor> neighbors = grid.getNeighbors(location);
